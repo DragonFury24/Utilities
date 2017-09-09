@@ -10,7 +10,7 @@ public class NumberInput {
             try {
                 iOutput = keyboard.nextInt();
             } catch (InputMismatchException I) {
-                System.out.println("You did not input a number. Please try again.");
+                System.out.println("You did not input a whole number. Please try again.");
                 keyboard.next();
             }
         }
@@ -27,7 +27,7 @@ public class NumberInput {
                     System.out.println("You put in a number less than 0. Please try again.");
                 }
             } catch (InputMismatchException I) {
-                System.out.println("You did not input a number. Please try again.");
+                System.out.println("You did not input a whole number. Please try again.");
                 keyboard.next();
             }
         }
