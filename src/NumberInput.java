@@ -6,9 +6,10 @@ public class NumberInput {
 
     public static int intInput(Scanner keyboard){ //checks if input is a int and return. If not, then will give error and force user to retry
         int iOutput = -1;
-        while (iOutput == -1) {
+        while (true) {
             try {
                 iOutput = keyboard.nextInt();
+                break;
             } catch (InputMismatchException I) {
                 System.out.println("You did not input a whole number. Please try again.");
                 keyboard.next();
